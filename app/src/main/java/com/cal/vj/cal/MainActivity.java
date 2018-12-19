@@ -10,26 +10,28 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button test;
+    Button clear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.page2);
         Log.d("Activity Lifecycle","onCreate Called");
 
-        test = findViewById(R.id.button);
 
-        test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Toast.makeText(MainActivity.this,"asss",Toast.LENGTH_LONG).show();
-                Intent page2 = new Intent(MainActivity.this, Page2.class );
-                startActivity(page2);
-                finish();
 
-            }
-        });
+//        test = findViewById(R.id.button);
+//
+//        test.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Toast.makeText(MainActivity.this,"asss",Toast.LENGTH_LONG).show();
+//                Intent page2 = new Intent(MainActivity.this, Page2.class );
+//                startActivity(page2);
+//                finish();
+//
+//            }
+//        });
     }
 
     @Override
