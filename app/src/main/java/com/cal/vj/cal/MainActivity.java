@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +33,65 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
+    }
+
+    public void clear(View v){
+        TextView tv1 = (TextView)findViewById(R.id.answer);
+        tv1.setText("");
+    }
+
+    public void setNumber(View v){
+        TextView tv1 = (TextView)findViewById(R.id.answer);
+        switch(v.getId())
+        {
+            case R.id.one:
+                tv1.append("1");
+                break;
+            case R.id.two:
+                tv1.append("2");
+                break;
+            case R.id.three:
+                tv1.append("3");
+                break;
+            case R.id.four:
+                tv1.append("4");
+                break;
+            case R.id.five:
+                tv1.append("5");
+                break;
+            case R.id.six:
+                tv1.append("6");
+                break;
+            case R.id.seven:
+                tv1.append("7");
+                break;
+            case R.id.eight:
+                tv1.append("8");
+                break;
+            case R.id.nine:
+                tv1.append("9");
+                break;
+            case R.id.zero:
+                tv1.append("0");
+                break;
+            case R.id.plus:
+                tv1.append("+");
+                break;
+            case R.id.minus:
+                tv1.append("-");
+                break;
+            case R.id.multiply:
+                tv1.append("*");
+                break;
+            case R.id.divide:
+                tv1.append("/");
+                break;
+            case R.id.enter:
+                
+                break;
+            default:
+                throw new RuntimeException("Unknow button ID");
+        }
     }
 
     @Override
