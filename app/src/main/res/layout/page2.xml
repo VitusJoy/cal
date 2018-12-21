@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_3">
+    android:background="@drawable/bg_0">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,131 +13,184 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="#FFF"
-            android:textSize="60sp"
+            android:textColor="#111"
+            android:textSize="50sp"
             android:gravity="center"
-            android:background="@color/colorPrimaryDark"/>
+            android:background="@drawable/funny2"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
+
         <Button
             android:id="@+id/one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:onClick="setNumber"
             android:text="1"
-            android:onClick="setNumber"/>
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
         <Button
             android:id="@+id/two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:onClick="setNumber"
             android:text="2"
-            android:onClick="setNumber"/>
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
         <Button
             android:id="@+id/three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/four"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:onClick="setNumber"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <Button
-            android:id="@+id/five"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/six"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/seven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/eight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:onClick="setNumber"
-            style="@style/Widget.AppCompat.Button.Borderless"/>
-    </LinearLayout>
+            android:text="3"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <Button
-            android:id="@+id/nine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="9"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/zero"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/enter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter"
-            android:onClick="setNumber"/>
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clear"
-            android:onClick="clear"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <Button
-            android:id="@+id/plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:onClick="setNumber"/>
         <Button
             android:id="@+id/minus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:text="-"
-            android:onClick="setNumber"/>
+            android:onClick="opSub"
+            android:background="@drawable/levelbgb5"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:onClick="setNumber"
+            android:text="4"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="5"
+            android:onClick="setNumber"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+        <Button
+            android:id="@+id/six"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="6"
+            android:onClick="setNumber"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="+"
+            android:onClick="opPlus"
+            android:background="@drawable/levelbgb5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="7"
+            android:onClick="setNumber"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="8"
+            android:onClick="setNumber"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="9"
+            android:onClick="setNumber"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
+
+
+
         <Button
             android:id="@+id/multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:text="*"
-            android:onClick="setNumber"/>
+            android:onClick="opMul"
+            android:background="@drawable/levelbgb5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="Clear"
+            android:onClick="clear"
+            android:background="@drawable/levelbgb5"/>
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="0"
+            android:onClick="setNumber"
+            android:textColor="#fff"
+            android:background="@drawable/levelbg1"/>
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="Enter"
+            android:onClick="onEnter"
+            android:background="@drawable/levelbgb5"/>
+
         <Button
             android:id="@+id/divide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:text="/"
-            android:onClick="setNumber"/>
+            android:onClick="opDiv"
+            android:background="@drawable/levelbgb5" />
+
+
+
+
+
+
     </LinearLayout>
 
 
